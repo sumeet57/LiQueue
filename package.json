@@ -1,0 +1,51 @@
+{
+  "name": "ts-sum",
+  "version": "1.0.0",
+  "description": "A tiny TypeScript utility for adding two numbers.",
+  "keywords": [
+    "typescript",
+    "math",
+    "sum",
+    "utility"
+  ],
+  "homepage": "https://github.com/sumeet57/ts-sum",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumeet57/ts-sum.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sumeet57/ts-sum/issues"
+  },
+  "license": "MIT",
+  "author": "Sumeet Umbalkar",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "eslint": "^9.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.0.0"
+  }
+}

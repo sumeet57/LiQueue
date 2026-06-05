@@ -1,0 +1,15 @@
+const tsconfig = {
+  compilerOptions: {
+    target: "ES2022",
+    module: "NodeNext",
+    moduleResolution: "NodeNext",
+    strict: true,
+    declaration: true,
+    sourceMap: true,
+    outDir: "dist",
+    esModuleInterop: true,
+  },
+  include: ["src"],
+} as const;
+
+export default tsconfig;
